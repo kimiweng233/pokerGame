@@ -1,28 +1,18 @@
 export default function SetUpDeck() {
-    const faces1 = ["🀀", "🀁", "🀂", "🀃", "🀄", "🀅", "🀆"]
-    const faces2 = [["🀇", "🀈", "🀉", "🀊", "🀋", "🀌", "🀍", "🀎", "🀏"],
-        ["🀐", "🀑", "🀒", "🀓", "🀔", "🀕", "🀖", "🀗", "🀘"],
-        ["🀙", "🀚", "🀛", "🀜", "🀝", "🀞", "🀟", "🀠", "🀡"]]
+    const suits = ["spades", "clubs", "hearts", "diamonds"]
+    const values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 
     var deck = []
     var card
 
-    for (var i=0; i < faces1.length; i++) {
-        for (var j=0; j < 4; j++) {
-            card = {'face': faces1[i], 'value': null}
+    for (var i=0; i<4; i++) {
+        for (var j=0; j<13; j++) {
+            card = {suit:suits[i], value:values[j]}
             deck.push(card)
         }
     }
-    for (var i=0; i < 3; i++) {
-        for (var j=0; j < 9; j++) {
-            for (var k=0; k < 4; k++) {
-                card = {'face': faces2[i][j], 'value': j+1}
-                deck.push(card)
-            }
-        }
-    }
 
-    let currentIndex = deck.length,  randomIndex;
+    let currentIndex = deck.length, randomIndex;
         while (currentIndex != 0) {
           randomIndex = Math.floor(Math.random() * currentIndex);
           currentIndex--;

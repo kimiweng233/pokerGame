@@ -1,0 +1,126 @@
+.game {
+    /* background-color: skyblue;
+    background-size: 100% 100%; */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.profile {  
+    position: absolute; 
+    height: 10%;
+    width: 10%;
+    background:slategray;
+    border-radius: 15px;
+    opacity: 0.7;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    overflow-x: auto */
+}
+
+.profile1 {
+    top: 4%;
+    left: 60%;
+}
+.profile2 {
+    top: 4%;
+    left: 30%;
+}
+.profile3 {
+    top: 20%;
+    left: 7%;
+}
+.profile4 {
+    top: 65%;
+    left: 5%;
+}
+.profile5 {
+    top: 85%;
+    left: 25%;
+}
+.profile6 {
+    top: 85%;
+    left: 60%;
+}
+.profile7 {
+    top: 65%;
+    left: 85%;
+}
+.profile8 {
+    top: 20%;
+    left: 84%;
+}
+
+.button1 {
+    top: 7%;
+    left: 63.5%;
+}
+
+.flexcontainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pfp {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    border-radius: 50%;
+}
+
+.nameTag {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.wagerText {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.tabu {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    height: 9%;
+    width: 4%;
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.card1 {
+    top: 20%;
+    left: 67%;
+    transform: rotate(165deg)
+}
+.card2 {
+    top: 20%;
+    left: 64%;
+    transform: rotate(30deg)
+}
+
+.plusButton {
+    height: 5%;
+    width: 3%;
+    background-image: url("../../../public/resources/plusButton.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+}
+
